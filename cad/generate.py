@@ -21,10 +21,12 @@ PNG = ROOT / "png"
 # --- Bed / printer limits ---
 # Mini printable 330 x 90; keep inside H2D single-nozzle 325 x 320.
 MINI_PLATE = (318.0, 86.0)
-# Standard printable 420 x 330 exceeds H2D; 318 x 318 covers the camera-friendly centre.
-STD_PLATE = (318.0, 318.0)
+# Standard printable 420 x 330 exceeds H2D. 308 x 308 is the 318 centre plate
+# with 10 mm trimmed from X and Y so it fits the H2D bed.
+STD_PLATE = (308.0, 308.0)
+STD_MIN_OUTER = 1.5  # allow a thinner rim than WALL so the pocket grid still fits
 
-WALL = 2.0  # outer frame and gap between pockets
+WALL = 2.0  # outer frame (mini) and gap between pockets
 CLEAR = 0.25  # per-side pocket clearance
 BASE = 2.0
 MAGNET_PROUD = 1.5
@@ -76,21 +78,26 @@ def pocket_xy(w: float, h: float) -> tuple[float, float]:
     return w + 2 * CLEAR, h + 2 * CLEAR
 
 
-def pack(plate: tuple[float, float], item_w: float, item_h: float) -> tuple[int, int, float, float, float, float]:
+def pack(
+    plate: tuple[float, float],
+    item_w: float,
+    item_h: float,
+    min_outer: float = WALL,
+) -> tuple[int, int, float, float, float, float]:
     """Return cols, rows, pocket_w, pocket_h, origin_x, origin_y. Try both orientations."""
     pw0, ph0 = pocket_xy(item_w, item_h)
     best = None
     for pw, ph, rotated in ((pw0, ph0, False), (ph0, pw0, True)):
-        inner_w = plate[0] - 2 * WALL
-        inner_h = plate[1] - 2 * WALL
+        inner_w = plate[0] - 2 * min_outer
+        inner_h = plate[1] - 2 * min_outer
         cols = max(1, int(math.floor((inner_w + WALL) / (pw + WALL))))
         rows = max(1, int(math.floor((inner_h + WALL) / (ph + WALL))))
         used_w = cols * pw + (cols - 1) * WALL
         used_h = rows * ph + (rows - 1) * WALL
         if used_w > inner_w + 0.05 or used_h > inner_h + 0.05:
             continue
-        ox = WALL + (inner_w - used_w) / 2
-        oy = WALL + (inner_h - used_h) / 2
+        ox = min_outer + (inner_w - used_w) / 2
+        oy = min_outer + (inner_h - used_h) / 2
         count = cols * rows
         score = (count, 0 if not rotated else -1)
         if best is None or score > best[0]:
@@ -111,7 +118,8 @@ def build_jig(
     notes: list[str],
 ) -> Jig:
     w, h, z = size
-    cols, rows, pw, ph, ox, oy = pack(plate, w, h)
+    min_outer = STD_MIN_OUTER if bed == "standard" else WALL
+    cols, rows, pw, ph, ox, oy = pack(plate, w, h, min_outer=min_outer)
     if item.startswith("mag"):
         wall_z = max(2.4, z - MAGNET_PROUD)  # 7.5 mm blank sits ~1.5 mm proud
         depth = wall_z
@@ -140,8 +148,8 @@ def build_jig(
 def all_jigs() -> list[Jig]:
     mini_note = "Mini E1 bed printable 330 x 90 mm. Plate leaves ~6 mm X and ~2 mm Y margin."
     std_note = (
-        "Standard E1 bed printable 420 x 330 mm. This 318 x 318 mm plate covers the "
-        "camera-friendly centre and fits an H2D single-nozzle print (325 x 320)."
+        "Standard E1 bed printable 420 x 330 mm. This 308 x 308 mm plate is the camera-"
+        "friendly centre trimmed 10 mm in X and Y to fit an H2D bed."
     )
     return [
         build_jig(
@@ -490,7 +498,7 @@ def write_html(jigs: list[Jig], svgs: list[Path]) -> Path:
 <body>
 <h1>Eufy E1 UV hold-down templates — Draft 1</h1>
 <p class="lead">Eight plates. Mini bed is 318×86 mm (fits the 330×90 printable area and an H2D).
-Standard bed is a 318×318 mm centre plate (the full 420×330 bed does not fit the H2D in one piece).
+Standard bed is a 308×308 mm centre plate (318 trimmed 10 mm in X and Y so it fits the H2D).
 Sits on the OEM sticky mat. Item print-face up. Walls sit below the print surface.
 Print PETG, 0.2 mm layers, 3 perimeters. Measure one real blank before a production run.</p>
 <ul>

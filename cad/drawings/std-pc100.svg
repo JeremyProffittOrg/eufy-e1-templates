@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.00 462.00"
-     width="1122" height="1386">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.00 452.00"
+     width="1092" height="1356">
   <style>
     text { font-family: Segoe UI, Arial, sans-serif; fill: #111; }
     .title { font-size: 7px; font-weight: 700; }
@@ -13,45 +13,45 @@
     .note { font-size: 3.3px; fill: #222; }
     .block { fill: #fff; stroke: #111; stroke-width: 0.4; }
   </style>
-  <rect class="block" x="0.4" y="0.4" width="373.20" height="461.20"/>
+  <rect class="block" x="0.4" y="0.4" width="363.20" height="451.20"/>
   <text class="title" x="28" y="12">Standard bed centre — PC100 168-pin DIMM</text>
   <text class="sub" x="28" y="19">Eufy E1 UV hold-down  ·  Draft 1  ·  std-pc100.scad  ·  units mm  ·  scale 1:1 in viewBox</text>
   <text class="sub" x="28" y="25">Bambu Lab H2D  ·  PETG  ·  sits on OEM adhesive mat  ·  LOCK edge →</text>
 
-  <rect class="plate" x="28.00" y="64.00" width="318.00" height="318.00" rx="3.0"/>
-  <rect class="pocket" x="52.15" y="325.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="325.50" r="2.2" /><circle class="pick" cx="119.08" cy="364.10" r="2.2" /><rect class="pocket" x="188.00" y="325.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="325.50" r="2.2" /><circle class="pick" cx="254.93" cy="364.10" r="2.2" /><rect class="pocket" x="52.15" y="284.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="284.90" r="2.2" /><circle class="pick" cx="119.08" cy="323.50" r="2.2" /><rect class="pocket" x="188.00" y="284.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="284.90" r="2.2" /><circle class="pick" cx="254.93" cy="323.50" r="2.2" /><rect class="pocket" x="52.15" y="244.30" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="244.30" r="2.2" /><circle class="pick" cx="119.08" cy="282.90" r="2.2" /><rect class="pocket" x="188.00" y="244.30" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="244.30" r="2.2" /><circle class="pick" cx="254.93" cy="282.90" r="2.2" /><rect class="pocket" x="52.15" y="203.70" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="203.70" r="2.2" /><circle class="pick" cx="119.08" cy="242.30" r="2.2" /><rect class="pocket" x="188.00" y="203.70" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="203.70" r="2.2" /><circle class="pick" cx="254.93" cy="242.30" r="2.2" /><rect class="pocket" x="52.15" y="163.10" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="163.10" r="2.2" /><circle class="pick" cx="119.08" cy="201.70" r="2.2" /><rect class="pocket" x="188.00" y="163.10" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="163.10" r="2.2" /><circle class="pick" cx="254.93" cy="201.70" r="2.2" /><rect class="pocket" x="52.15" y="122.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="122.50" r="2.2" /><circle class="pick" cx="119.08" cy="161.10" r="2.2" /><rect class="pocket" x="188.00" y="122.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="122.50" r="2.2" /><circle class="pick" cx="254.93" cy="161.10" r="2.2" /><rect class="pocket" x="52.15" y="81.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="81.90" r="2.2" /><circle class="pick" cx="119.08" cy="120.50" r="2.2" /><rect class="pocket" x="188.00" y="81.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="81.90" r="2.2" /><circle class="pick" cx="254.93" cy="120.50" r="2.2" />
+  <rect class="plate" x="28.00" y="64.00" width="308.00" height="308.00" rx="3.0"/>
+  <rect class="pocket" x="47.15" y="320.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="114.08" cy="320.50" r="2.2" /><circle class="pick" cx="114.08" cy="359.10" r="2.2" /><rect class="pocket" x="183.00" y="320.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="249.93" cy="320.50" r="2.2" /><circle class="pick" cx="249.93" cy="359.10" r="2.2" /><rect class="pocket" x="47.15" y="279.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="114.08" cy="279.90" r="2.2" /><circle class="pick" cx="114.08" cy="318.50" r="2.2" /><rect class="pocket" x="183.00" y="279.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="249.93" cy="279.90" r="2.2" /><circle class="pick" cx="249.93" cy="318.50" r="2.2" /><rect class="pocket" x="47.15" y="239.30" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="114.08" cy="239.30" r="2.2" /><circle class="pick" cx="114.08" cy="277.90" r="2.2" /><rect class="pocket" x="183.00" y="239.30" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="249.93" cy="239.30" r="2.2" /><circle class="pick" cx="249.93" cy="277.90" r="2.2" /><rect class="pocket" x="47.15" y="198.70" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="114.08" cy="198.70" r="2.2" /><circle class="pick" cx="114.08" cy="237.30" r="2.2" /><rect class="pocket" x="183.00" y="198.70" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="249.93" cy="198.70" r="2.2" /><circle class="pick" cx="249.93" cy="237.30" r="2.2" /><rect class="pocket" x="47.15" y="158.10" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="114.08" cy="158.10" r="2.2" /><circle class="pick" cx="114.08" cy="196.70" r="2.2" /><rect class="pocket" x="183.00" y="158.10" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="249.93" cy="158.10" r="2.2" /><circle class="pick" cx="249.93" cy="196.70" r="2.2" /><rect class="pocket" x="47.15" y="117.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="114.08" cy="117.50" r="2.2" /><circle class="pick" cx="114.08" cy="156.10" r="2.2" /><rect class="pocket" x="183.00" y="117.50" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="249.93" cy="117.50" r="2.2" /><circle class="pick" cx="249.93" cy="156.10" r="2.2" /><rect class="pocket" x="47.15" y="76.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="114.08" cy="76.90" r="2.2" /><circle class="pick" cx="114.08" cy="115.50" r="2.2" /><rect class="pocket" x="183.00" y="76.90" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="249.93" cy="76.90" r="2.2" /><circle class="pick" cx="249.93" cy="115.50" r="2.2" />
 
   
     <g class="dim">
-      <line x1="28.00" y1="390.00" x2="346.00" y2="390.00" />
-      <line x1="28.00" y1="388.50" x2="28.00" y2="391.50" />
-      <line x1="346.00" y1="388.50" x2="346.00" y2="391.50" />
-      <text x="187.00" y="393.40" text-anchor="middle">318</text>
+      <line x1="28.00" y1="380.00" x2="336.00" y2="380.00" />
+      <line x1="28.00" y1="378.50" x2="28.00" y2="381.50" />
+      <line x1="336.00" y1="378.50" x2="336.00" y2="381.50" />
+      <text x="182.00" y="383.40" text-anchor="middle">308</text>
     </g>
   
     <g class="dim">
-      <line x1="20.00" y1="64.00" x2="20.00" y2="382.00" />
+      <line x1="20.00" y1="64.00" x2="20.00" y2="372.00" />
       <line x1="18.50" y1="64.00" x2="21.50" y2="64.00" />
-      <line x1="18.50" y1="382.00" x2="21.50" y2="382.00" />
-      <text x="17.60" y="223.00" text-anchor="end" dominant-baseline="middle">318</text>
+      <line x1="18.50" y1="372.00" x2="21.50" y2="372.00" />
+      <text x="17.60" y="218.00" text-anchor="end" dominant-baseline="middle">308</text>
     </g>
   
     <g class="dim">
-      <line x1="52.15" y1="319.50" x2="186.00" y2="319.50" />
-      <line x1="52.15" y1="318.00" x2="52.15" y2="321.00" />
-      <line x1="186.00" y1="318.00" x2="186.00" y2="321.00" />
-      <text x="119.08" y="317.30" text-anchor="middle">133.85</text>
+      <line x1="47.15" y1="314.50" x2="181.00" y2="314.50" />
+      <line x1="47.15" y1="313.00" x2="47.15" y2="316.00" />
+      <line x1="181.00" y1="313.00" x2="181.00" y2="316.00" />
+      <text x="114.08" y="312.30" text-anchor="middle">133.85</text>
     </g>
   
     <g class="dim">
-      <line x1="192.00" y1="325.50" x2="192.00" y2="364.10" />
-      <line x1="190.50" y1="325.50" x2="193.50" y2="325.50" />
-      <line x1="190.50" y1="364.10" x2="193.50" y2="364.10" />
-      <text x="194.40" y="344.80" text-anchor="start" dominant-baseline="middle">38.60</text>
+      <line x1="187.00" y1="320.50" x2="187.00" y2="359.10" />
+      <line x1="185.50" y1="320.50" x2="188.50" y2="320.50" />
+      <line x1="185.50" y1="359.10" x2="188.50" y2="359.10" />
+      <text x="189.40" y="339.80" text-anchor="start" dominant-baseline="middle">38.60</text>
     </g>
 
-  <text class="note" x="28" y="418.0">Standard E1 bed printable 420 x 330 mm. This 318 x 318 mm plate covers the camera-friendly centre and fits an H2D single-nozzle print (325 x 320).  |  JEDEC MO-161, 133.35 x 38.10 mm face, 38 mm max height.  |  2 x 7 = 14 pockets  |  Pocket 133.85 x 38.60 mm (item 133.35 x 38.1 + 0.50 mm clearance)</text>
-  <text class="note" x="28" y="424.0">Walls 2.40 mm; item sits proud of the walls</text>
-  <text class="note" x="28" y="430.0">Plate 318 x 318 x 4.4 mm  ·  2 cols × 7 rows  ·  plate Z 4.4 mm  ·  pocket depth 2.4 mm</text>
-  <text class="note" x="346.0" y="430.0" text-anchor="end">LOCK →</text>
+  <text class="note" x="28" y="408.0">Standard E1 bed printable 420 x 330 mm. This 308 x 308 mm plate is the camera-friendly centre trimmed 10 mm in X and Y to fit an H2D bed.  |  JEDEC MO-161, 133.35 x 38.10 mm face, 38 mm max height.  |  2 x 7 = 14 pockets  |  Pocket 133.85 x 38.60 mm (item 133.35 x 38.1 + 0.50 mm clearance)</text>
+  <text class="note" x="28" y="414.0">Walls 2.40 mm; item sits proud of the walls</text>
+  <text class="note" x="28" y="420.0">Plate 308 x 308 x 4.4 mm  ·  2 cols × 7 rows  ·  plate Z 4.4 mm  ·  pocket depth 2.4 mm</text>
+  <text class="note" x="336.0" y="420.0" text-anchor="end">LOCK →</text>
 </svg>
