@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Eufy E1 hold-down templates — Draft 1</title>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; margin: 24px; background: #ececec; color: #111; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  .lead { color: #333; max-width: 900px; }
+  section { background: #fff; border: 1px solid #bbb; margin: 18px 0; padding: 12px 12px 4px; }
+  h2 { font-size: 16px; margin: 0 0 4px; }
+  .meta { font-size: 12px; color: #444; margin: 0 0 8px; }
+  .dwg { width: 100%; height: 520px; }
+  ul { max-width: 900px; }
+</style>
+</head>
+<body>
+<h1>Eufy E1 UV hold-down templates — Draft 1</h1>
+<p class="lead">Eight plates. Mini bed is 318×86 mm (fits the 330×90 printable area and an H2D).
+Standard bed is a 318×318 mm centre plate (the full 420×330 bed does not fit the H2D in one piece).
+Sits on the OEM sticky mat. Item print-face up. Walls sit below the print surface.
+Print PETG, 0.2 mm layers, 3 perimeters. Measure one real blank before a production run.</p>
+<ul>
+  <li>Magnets: 50×70×7.5 mm (V72W0022) and 57×57×7.5 mm (V72W0023)</li>
+  <li>PC100 DIMM: 133.35×38.10 mm face, 38 mm max height, 168-pin</li>
+  <li>72-pin SIMM: 107.95×25.40 mm face, 5.08 mm max thickness</li>
+</ul>
+
+<section>
+  <h2>Mini bed — 50 x 70 mm ceramic magnets</h2>
+  <p class="meta">mini-mag-50x70.scad · 6×1 = 6 pockets ·
+     plate 318×86×8.0 mm ·
+     pocket 50.50×70.50×6.0 mm</p>
+  <object type="image/svg+xml" data="mini-mag-50x70.svg" class="dwg"></object>
+</section>
+<section>
+  <h2>Mini bed — 57 x 57 mm ceramic magnets</h2>
+  <p class="meta">mini-mag-57x57.scad · 5×1 = 5 pockets ·
+     plate 318×86×8.0 mm ·
+     pocket 57.50×57.50×6.0 mm</p>
+  <object type="image/svg+xml" data="mini-mag-57x57.svg" class="dwg"></object>
+</section>
+<section>
+  <h2>Mini bed — PC100 168-pin DIMM</h2>
+  <p class="meta">mini-pc100.scad · 2×2 = 4 pockets ·
+     plate 318×86×4.4 mm ·
+     pocket 133.85×38.60×2.4 mm</p>
+  <object type="image/svg+xml" data="mini-pc100.svg" class="dwg"></object>
+</section>
+<section>
+  <h2>Mini bed — 72-pin SIMM</h2>
+  <p class="meta">mini-simm72.scad · 2×3 = 6 pockets ·
+     plate 318×86×4.4 mm ·
+     pocket 108.45×25.90×2.4 mm</p>
+  <object type="image/svg+xml" data="mini-simm72.svg" class="dwg"></object>
+</section>
+<section>
+  <h2>Standard bed centre — 50 x 70 mm ceramic magnets</h2>
+  <p class="meta">std-mag-50x70.scad · 6×4 = 24 pockets ·
+     plate 318×318×8.0 mm ·
+     pocket 50.50×70.50×6.0 mm</p>
+  <object type="image/svg+xml" data="std-mag-50x70.svg" class="dwg"></object>
+</section>
+<section>
+  <h2>Standard bed centre — 57 x 57 mm ceramic magnets</h2>
+  <p class="meta">std-mag-57x57.scad · 5×5 = 25 pockets ·
+     plate 318×318×8.0 mm ·
+     pocket 57.50×57.50×6.0 mm</p>
+  <object type="image/svg+xml" data="std-mag-57x57.svg" class="dwg"></object>
+</section>
+<section>
+  <h2>Standard bed centre — PC100 168-pin DIMM</h2>
+  <p class="meta">std-pc100.scad · 2×7 = 14 pockets ·
+     plate 318×318×4.4 mm ·
+     pocket 133.85×38.60×2.4 mm</p>
+  <object type="image/svg+xml" data="std-pc100.svg" class="dwg"></object>
+</section>
+<section>
+  <h2>Standard bed centre — 72-pin SIMM</h2>
+  <p class="meta">std-simm72.scad · 2×11 = 22 pockets ·
+     plate 318×318×4.4 mm ·
+     pocket 108.45×25.90×2.4 mm</p>
+  <object type="image/svg+xml" data="std-simm72.svg" class="dwg"></object>
+</section>
+</body>
+</html>

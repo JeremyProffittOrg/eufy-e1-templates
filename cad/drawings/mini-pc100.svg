@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.00 230.00"
+     width="1122" height="690">
+  <style>
+    text { font-family: Segoe UI, Arial, sans-serif; fill: #111; }
+    .title { font-size: 7px; font-weight: 700; }
+    .sub { font-size: 4px; fill: #333; }
+    .dim text { font-size: 3.2px; fill: #1a1a1a; }
+    .dim line { stroke: #222; stroke-width: 0.25; }
+    .plate { fill: #f4f1e8; stroke: #111; stroke-width: 0.6; }
+    .pocket { fill: #fff; stroke: #111; stroke-width: 0.35; }
+    .pick { fill: none; stroke: #666; stroke-width: 0.2; stroke-dasharray: 0.8 0.6; }
+    .note { font-size: 3.3px; fill: #222; }
+    .block { fill: #fff; stroke: #111; stroke-width: 0.4; }
+  </style>
+  <rect class="block" x="0.4" y="0.4" width="373.20" height="229.20"/>
+  <text class="title" x="28" y="12">Mini bed — PC100 168-pin DIMM</text>
+  <text class="sub" x="28" y="19">Eufy E1 UV hold-down  ·  Draft 1  ·  mini-pc100.scad  ·  units mm  ·  scale 1:1 in viewBox</text>
+  <text class="sub" x="28" y="25">Bambu Lab H2D  ·  PETG  ·  sits on OEM adhesive mat  ·  LOCK edge →</text>
+
+  <rect class="plate" x="28.00" y="64.00" width="318.00" height="86.00" rx="3.0"/>
+  <rect class="pocket" x="52.15" y="108.00" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="108.00" r="2.2" /><circle class="pick" cx="119.08" cy="146.60" r="2.2" /><rect class="pocket" x="188.00" y="108.00" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="108.00" r="2.2" /><circle class="pick" cx="254.93" cy="146.60" r="2.2" /><rect class="pocket" x="52.15" y="67.40" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="119.08" cy="67.40" r="2.2" /><circle class="pick" cx="119.08" cy="106.00" r="2.2" /><rect class="pocket" x="188.00" y="67.40" width="133.85" height="38.60" rx="0.8" /><circle class="pick" cx="254.93" cy="67.40" r="2.2" /><circle class="pick" cx="254.93" cy="106.00" r="2.2" />
+
+  
+    <g class="dim">
+      <line x1="28.00" y1="158.00" x2="346.00" y2="158.00" />
+      <line x1="28.00" y1="156.50" x2="28.00" y2="159.50" />
+      <line x1="346.00" y1="156.50" x2="346.00" y2="159.50" />
+      <text x="187.00" y="161.40" text-anchor="middle">318</text>
+    </g>
+  
+    <g class="dim">
+      <line x1="20.00" y1="64.00" x2="20.00" y2="150.00" />
+      <line x1="18.50" y1="64.00" x2="21.50" y2="64.00" />
+      <line x1="18.50" y1="150.00" x2="21.50" y2="150.00" />
+      <text x="17.60" y="107.00" text-anchor="end" dominant-baseline="middle">86</text>
+    </g>
+  
+    <g class="dim">
+      <line x1="52.15" y1="102.00" x2="186.00" y2="102.00" />
+      <line x1="52.15" y1="100.50" x2="52.15" y2="103.50" />
+      <line x1="186.00" y1="100.50" x2="186.00" y2="103.50" />
+      <text x="119.08" y="99.80" text-anchor="middle">133.85</text>
+    </g>
+  
+    <g class="dim">
+      <line x1="192.00" y1="108.00" x2="192.00" y2="146.60" />
+      <line x1="190.50" y1="108.00" x2="193.50" y2="108.00" />
+      <line x1="190.50" y1="146.60" x2="193.50" y2="146.60" />
+      <text x="194.40" y="127.30" text-anchor="start" dominant-baseline="middle">38.60</text>
+    </g>
+
+  <text class="note" x="28" y="186.0">Mini E1 bed printable 330 x 90 mm. Plate leaves ~6 mm X and ~2 mm Y margin.  |  JEDEC MO-161, 133.35 x 38.10 mm face, 38 mm max height.  |  Gold-finger edge along the 133 mm side. Seat fingers toward the labelled strip.  |  2 x 2 = 4 pockets</text>
+  <text class="note" x="28" y="192.0">Pocket 133.85 x 38.60 mm (item 133.35 x 38.1 + 0.50 mm clearance)</text>
+  <text class="note" x="28" y="198.0">Walls 2.40 mm; item sits proud of the walls  ·  2 cols × 2 rows  ·  plate Z 4.4 mm  ·  pocket depth 2.4 mm</text>
+  <text class="note" x="346.0" y="198.0" text-anchor="end">LOCK →</text>
+</svg>

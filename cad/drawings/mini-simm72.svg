@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.00 230.00"
+     width="1122" height="690">
+  <style>
+    text { font-family: Segoe UI, Arial, sans-serif; fill: #111; }
+    .title { font-size: 7px; font-weight: 700; }
+    .sub { font-size: 4px; fill: #333; }
+    .dim text { font-size: 3.2px; fill: #1a1a1a; }
+    .dim line { stroke: #222; stroke-width: 0.25; }
+    .plate { fill: #f4f1e8; stroke: #111; stroke-width: 0.6; }
+    .pocket { fill: #fff; stroke: #111; stroke-width: 0.35; }
+    .pick { fill: none; stroke: #666; stroke-width: 0.2; stroke-dasharray: 0.8 0.6; }
+    .note { font-size: 3.3px; fill: #222; }
+    .block { fill: #fff; stroke: #111; stroke-width: 0.4; }
+  </style>
+  <rect class="block" x="0.4" y="0.4" width="373.20" height="229.20"/>
+  <text class="title" x="28" y="12">Mini bed — 72-pin SIMM</text>
+  <text class="sub" x="28" y="19">Eufy E1 UV hold-down  ·  Draft 1  ·  mini-simm72.scad  ·  units mm  ·  scale 1:1 in viewBox</text>
+  <text class="sub" x="28" y="25">Bambu Lab H2D  ·  PETG  ·  sits on OEM adhesive mat  ·  LOCK edge →</text>
+
+  <rect class="plate" x="28.00" y="64.00" width="318.00" height="86.00" rx="3.0"/>
+  <rect class="pocket" x="77.55" y="121.95" width="108.45" height="25.90" rx="0.8" /><circle class="pick" cx="131.78" cy="121.95" r="2.2" /><circle class="pick" cx="131.78" cy="147.85" r="2.2" /><rect class="pocket" x="188.00" y="121.95" width="108.45" height="25.90" rx="0.8" /><circle class="pick" cx="242.22" cy="121.95" r="2.2" /><circle class="pick" cx="242.22" cy="147.85" r="2.2" /><rect class="pocket" x="77.55" y="94.05" width="108.45" height="25.90" rx="0.8" /><circle class="pick" cx="131.78" cy="94.05" r="2.2" /><circle class="pick" cx="131.78" cy="119.95" r="2.2" /><rect class="pocket" x="188.00" y="94.05" width="108.45" height="25.90" rx="0.8" /><circle class="pick" cx="242.22" cy="94.05" r="2.2" /><circle class="pick" cx="242.22" cy="119.95" r="2.2" /><rect class="pocket" x="77.55" y="66.15" width="108.45" height="25.90" rx="0.8" /><circle class="pick" cx="131.78" cy="66.15" r="2.2" /><circle class="pick" cx="131.78" cy="92.05" r="2.2" /><rect class="pocket" x="188.00" y="66.15" width="108.45" height="25.90" rx="0.8" /><circle class="pick" cx="242.22" cy="66.15" r="2.2" /><circle class="pick" cx="242.22" cy="92.05" r="2.2" />
+
+  
+    <g class="dim">
+      <line x1="28.00" y1="158.00" x2="346.00" y2="158.00" />
+      <line x1="28.00" y1="156.50" x2="28.00" y2="159.50" />
+      <line x1="346.00" y1="156.50" x2="346.00" y2="159.50" />
+      <text x="187.00" y="161.40" text-anchor="middle">318</text>
+    </g>
+  
+    <g class="dim">
+      <line x1="20.00" y1="64.00" x2="20.00" y2="150.00" />
+      <line x1="18.50" y1="64.00" x2="21.50" y2="64.00" />
+      <line x1="18.50" y1="150.00" x2="21.50" y2="150.00" />
+      <text x="17.60" y="107.00" text-anchor="end" dominant-baseline="middle">86</text>
+    </g>
+  
+    <g class="dim">
+      <line x1="77.55" y1="115.95" x2="186.00" y2="115.95" />
+      <line x1="77.55" y1="114.45" x2="77.55" y2="117.45" />
+      <line x1="186.00" y1="114.45" x2="186.00" y2="117.45" />
+      <text x="131.78" y="113.75" text-anchor="middle">108.45</text>
+    </g>
+  
+    <g class="dim">
+      <line x1="192.00" y1="121.95" x2="192.00" y2="147.85" />
+      <line x1="190.50" y1="121.95" x2="193.50" y2="121.95" />
+      <line x1="190.50" y1="147.85" x2="193.50" y2="147.85" />
+      <text x="194.40" y="134.90" text-anchor="start" dominant-baseline="middle">25.90</text>
+    </g>
+
+  <text class="note" x="28" y="186.0">Mini E1 bed printable 330 x 90 mm. Plate leaves ~6 mm X and ~2 mm Y margin.  |  JEDEC MO-116, 107.95 x 25.40 mm face, 5.08 mm max thickness.  |  Polarizing notch at one end. Measure a real module; some stacked SIMMs are taller.  |  2 x 3 = 6 pockets</text>
+  <text class="note" x="28" y="192.0">Pocket 108.45 x 25.90 mm (item 107.95 x 25.4 + 0.50 mm clearance)</text>
+  <text class="note" x="28" y="198.0">Walls 2.40 mm; item sits proud of the walls  ·  2 cols × 3 rows  ·  plate Z 4.4 mm  ·  pocket depth 2.4 mm</text>
+  <text class="note" x="346.0" y="198.0" text-anchor="end">LOCK →</text>
+</svg>
