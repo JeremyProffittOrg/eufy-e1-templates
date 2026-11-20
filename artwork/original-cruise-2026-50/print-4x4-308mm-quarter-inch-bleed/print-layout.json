@@ -1,0 +1,437 @@
+{
+  "canvas_mm": [
+    308,
+    308
+  ],
+  "pixels": [
+    6160,
+    6160
+  ],
+  "dpi": [
+    508.0,
+    508.0
+  ],
+  "grid": [
+    4,
+    4
+  ],
+  "nominal_magnet_mm": [
+    57,
+    57
+  ],
+  "pocket_mm": [
+    57.5,
+    57.5
+  ],
+  "bleed_per_side_mm": 6.35,
+  "artwork_with_bleed_mm": [
+    69.7,
+    69.7
+  ],
+  "outer_print_margin_mm": 0.15,
+  "minimum_gap_between_bleed_mm": 9.632999999999996,
+  "max_center_error_vs_stl_mm": 0.017007446289056816,
+  "alpha_gaps_verified": true,
+  "no_overlaps": true,
+  "source_artwork_unchanged": true,
+  "method": "Preserve full original in the central 57mm face. A continuous 0.6mm edge extension protects registration tolerance, blended into generated scenery in the 6.35mm bleed ring.",
+  "nominal_face_pixels_match_original": true,
+  "orientation": "Top view; image top is CAD +Y; all artwork upright; no mirroring.",
+  "counts": {
+    "68": 3,
+    "46": 3,
+    "35": 2,
+    "25": 2,
+    "14": 2,
+    "11": 2,
+    "6": 2
+  },
+  "placements": [
+    {
+      "position": 1,
+      "row": 1,
+      "column": 1,
+      "design": 68,
+      "title": "Tropical Botanicals",
+      "source": "68-bw-tropical-botanicals.png",
+      "center_mm": [
+        35.0,
+        35.0
+      ],
+      "bleed_box_px": [
+        3,
+        3,
+        1397,
+        1397
+      ],
+      "nominal_face_box_px": [
+        130,
+        130,
+        1270,
+        1270
+      ]
+    },
+    {
+      "position": 2,
+      "row": 1,
+      "column": 2,
+      "design": 46,
+      "title": "Ocean Mosaic",
+      "source": "46-ocean-mosaic.png",
+      "center_mm": [
+        114.333,
+        35.0
+      ],
+      "bleed_box_px": [
+        1590,
+        3,
+        2984,
+        1397
+      ],
+      "nominal_face_box_px": [
+        1717,
+        130,
+        2857,
+        1270
+      ]
+    },
+    {
+      "position": 3,
+      "row": 1,
+      "column": 3,
+      "design": 35,
+      "title": "Surf and Sunshine",
+      "source": "35-surf-and-sunshine.png",
+      "center_mm": [
+        193.667,
+        35.0
+      ],
+      "bleed_box_px": [
+        3176,
+        3,
+        4570,
+        1397
+      ],
+      "nominal_face_box_px": [
+        3303,
+        130,
+        4443,
+        1270
+      ]
+    },
+    {
+      "position": 4,
+      "row": 1,
+      "column": 4,
+      "design": 25,
+      "title": "Poolside Paradise",
+      "source": "25-poolside-paradise.png",
+      "center_mm": [
+        273.0,
+        35.0
+      ],
+      "bleed_box_px": [
+        4763,
+        3,
+        6157,
+        1397
+      ],
+      "nominal_face_box_px": [
+        4890,
+        130,
+        6030,
+        1270
+      ]
+    },
+    {
+      "position": 5,
+      "row": 2,
+      "column": 1,
+      "design": 14,
+      "title": "Seashell Keepsakes",
+      "source": "14-seashell-keepsakes.png",
+      "center_mm": [
+        35.0,
+        114.333
+      ],
+      "bleed_box_px": [
+        3,
+        1590,
+        1397,
+        2984
+      ],
+      "nominal_face_box_px": [
+        130,
+        1717,
+        1270,
+        2857
+      ]
+    },
+    {
+      "position": 6,
+      "row": 2,
+      "column": 2,
+      "design": 11,
+      "title": "Harbor Fireworks",
+      "source": "11-harbor-fireworks.png",
+      "center_mm": [
+        114.333,
+        114.333
+      ],
+      "bleed_box_px": [
+        1590,
+        1590,
+        2984,
+        2984
+      ],
+      "nominal_face_box_px": [
+        1717,
+        1717,
+        2857,
+        2857
+      ]
+    },
+    {
+      "position": 7,
+      "row": 2,
+      "column": 3,
+      "design": 6,
+      "title": "Coral Kingdom",
+      "source": "06-coral-kingdom.png",
+      "center_mm": [
+        193.667,
+        114.333
+      ],
+      "bleed_box_px": [
+        3176,
+        1590,
+        4570,
+        2984
+      ],
+      "nominal_face_box_px": [
+        3303,
+        1717,
+        4443,
+        2857
+      ]
+    },
+    {
+      "position": 8,
+      "row": 2,
+      "column": 4,
+      "design": 68,
+      "title": "Tropical Botanicals",
+      "source": "68-bw-tropical-botanicals.png",
+      "center_mm": [
+        273.0,
+        114.333
+      ],
+      "bleed_box_px": [
+        4763,
+        1590,
+        6157,
+        2984
+      ],
+      "nominal_face_box_px": [
+        4890,
+        1717,
+        6030,
+        2857
+      ]
+    },
+    {
+      "position": 9,
+      "row": 3,
+      "column": 1,
+      "design": 46,
+      "title": "Ocean Mosaic",
+      "source": "46-ocean-mosaic.png",
+      "center_mm": [
+        35.0,
+        193.667
+      ],
+      "bleed_box_px": [
+        3,
+        3176,
+        1397,
+        4570
+      ],
+      "nominal_face_box_px": [
+        130,
+        3303,
+        1270,
+        4443
+      ]
+    },
+    {
+      "position": 10,
+      "row": 3,
+      "column": 2,
+      "design": 35,
+      "title": "Surf and Sunshine",
+      "source": "35-surf-and-sunshine.png",
+      "center_mm": [
+        114.333,
+        193.667
+      ],
+      "bleed_box_px": [
+        1590,
+        3176,
+        2984,
+        4570
+      ],
+      "nominal_face_box_px": [
+        1717,
+        3303,
+        2857,
+        4443
+      ]
+    },
+    {
+      "position": 11,
+      "row": 3,
+      "column": 3,
+      "design": 25,
+      "title": "Poolside Paradise",
+      "source": "25-poolside-paradise.png",
+      "center_mm": [
+        193.667,
+        193.667
+      ],
+      "bleed_box_px": [
+        3176,
+        3176,
+        4570,
+        4570
+      ],
+      "nominal_face_box_px": [
+        3303,
+        3303,
+        4443,
+        4443
+      ]
+    },
+    {
+      "position": 12,
+      "row": 3,
+      "column": 4,
+      "design": 14,
+      "title": "Seashell Keepsakes",
+      "source": "14-seashell-keepsakes.png",
+      "center_mm": [
+        273.0,
+        193.667
+      ],
+      "bleed_box_px": [
+        4763,
+        3176,
+        6157,
+        4570
+      ],
+      "nominal_face_box_px": [
+        4890,
+        3303,
+        6030,
+        4443
+      ]
+    },
+    {
+      "position": 13,
+      "row": 4,
+      "column": 1,
+      "design": 11,
+      "title": "Harbor Fireworks",
+      "source": "11-harbor-fireworks.png",
+      "center_mm": [
+        35.0,
+        273.0
+      ],
+      "bleed_box_px": [
+        3,
+        4763,
+        1397,
+        6157
+      ],
+      "nominal_face_box_px": [
+        130,
+        4890,
+        1270,
+        6030
+      ]
+    },
+    {
+      "position": 14,
+      "row": 4,
+      "column": 2,
+      "design": 6,
+      "title": "Coral Kingdom",
+      "source": "06-coral-kingdom.png",
+      "center_mm": [
+        114.333,
+        273.0
+      ],
+      "bleed_box_px": [
+        1590,
+        4763,
+        2984,
+        6157
+      ],
+      "nominal_face_box_px": [
+        1717,
+        4890,
+        2857,
+        6030
+      ]
+    },
+    {
+      "position": 15,
+      "row": 4,
+      "column": 3,
+      "design": 68,
+      "title": "Tropical Botanicals",
+      "source": "68-bw-tropical-botanicals.png",
+      "center_mm": [
+        193.667,
+        273.0
+      ],
+      "bleed_box_px": [
+        3176,
+        4763,
+        4570,
+        6157
+      ],
+      "nominal_face_box_px": [
+        3303,
+        4890,
+        4443,
+        6030
+      ]
+    },
+    {
+      "position": 16,
+      "row": 4,
+      "column": 4,
+      "design": 46,
+      "title": "Ocean Mosaic",
+      "source": "46-ocean-mosaic.png",
+      "center_mm": [
+        273.0,
+        273.0
+      ],
+      "bleed_box_px": [
+        4763,
+        4763,
+        6157,
+        6157
+      ],
+      "nominal_face_box_px": [
+        4890,
+        4890,
+        6030,
+        6030
+      ]
+    }
+  ],
+  "output": "PRINT-308x308mm-4x4-6p35mm-bleed-508dpi.png",
+  "sha256": "51bb7969e50e0f6dbb70ceeb4ac77324e77cf399afc7da39bec159ef0d381046"
+}

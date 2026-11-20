@@ -55,7 +55,7 @@ Track every job by index and job ID in jobs.json. Poll both success and failure.
 ## Selected print designs — User template check before array assembly
 - 2026-11-20 user selected, in order: 68, 46, 35, 25, 14, 11, 06. Selection saved to artwork/original-cruise-2026-50/selected-designs.json.
 - Open standard square template cad/stl/std-mag-57x57.stl in Bambu Studio for inspection: 308x308x8 mm, 25 pockets. Source SCAD read and STL existence verified.
-- [ ] print-array — Wait for user inspection and template confirmation before creating the combined print image.
+- [x] print-array — User authorized print sheet after template inspection; completed 308mm sheet with 6.35mm bleed.
 
 ## square-grid-spacing — Convert the 308 mm standard square jig to 4x4
 ### square-grid-export — Preserve plate and pocket dimensions while widening spacing
@@ -73,3 +73,16 @@ Track every job by index and job ID in jobs.json. Poll both success and failure.
 - git diff --check — exit 0. Standard square PNG, SVG, SCAD and STL regenerated; index metadata updated. Bambu Studio reopened with updated STL, process 37740.
 
 - Delivery: commit 5826e6e5951580054fb5fd570719fde6f85d2353 pushed to origin/main; git ls-remote confirmed identical remote SHA. GitHub connector returned no commit statuses and no PR-triggered workflow runs; local tracked files contain no .github workflow, so no repository deployment run exists to monitor.
+
+## print-array-layout — Exact 308mm print sheet with quarter-inch bleed
+### print-sheet-build — Compose selected artwork on the revised 4x4 jig
+- 2026-11-20 locked decision: "okay, create a print template of those images to use the extact dimentions of the template, makeing sure each image has an added 1/4 inch bleed in all dimentions, opoen the image when done". This releases the print-array hold.
+- [x] print-sheet-layout — 308x308mm transparent PNG, 20 pixels/mm (6160x6160; 508dpi). Center 69.7mm artwork squares on 57mm nominal magnet faces; 6.35mm bleed on each edge. Preserve source files.
+- Assumption: fill all 16 pockets by repeating selected order [68,46,35,25,14,11,6], left-to-right, top-to-bottom. Source artwork uniformly covers bleed extent; inspect nominal-face crop for readable year and key content.
+- Non-goals: new artwork, CAD edits, printer connection, printing. Files: print output folder, selected-designs.json, plan.md.
+- [x] print-sheet-proof — Compare positions with actual STL floor bounds, check alpha gaps, 16 placements, no overlap, physical dimensions and year readability in nominal face proof.
+- [x] print-sheet-open — Open verified final PNG in default image application.
+- Initial cover-scale proof rejected: design 14 year extended outside nominal face. Safeguard: every 57mm face will be copied intact from its selected original; generated extensions are used only in the added bleed ring. Verify face pixels against resized originals for all 16 placements.
+
+- Final print proof: Python313/python.exe C:/Users/Jeremy/.codex/tmp/square-jig-4x4/build_print_sheet.py — exit 0. PNG 6160x6160 at 508dpi (308mm square), 16 opaque 1394px squares, 6.35mm bleed each side, transparent gaps, no overlap. Largest center offset from actual STL is 0.01701mm due to raster rounding.
+- All 16 nominal 1140px magnet faces byte-match their resized original selected artworks. Reviewed magnet-face proof and alignment proof; all 2026 text complete. Background extensions stored separately; originals unchanged. Final image opened via Explorer.

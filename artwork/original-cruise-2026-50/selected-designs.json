@@ -1,0 +1,55 @@
+{
+  "selected": [
+    {
+      "index": 68,
+      "title": "Tropical Botanicals",
+      "filename": "68-bw-tropical-botanicals.png"
+    },
+    {
+      "index": 46,
+      "title": "Ocean Mosaic",
+      "filename": "46-ocean-mosaic.png"
+    },
+    {
+      "index": 35,
+      "title": "Surf and Sunshine",
+      "filename": "35-surf-and-sunshine.png"
+    },
+    {
+      "index": 25,
+      "title": "Poolside Paradise",
+      "filename": "25-poolside-paradise.png"
+    },
+    {
+      "index": 14,
+      "title": "Seashell Keepsakes",
+      "filename": "14-seashell-keepsakes.png"
+    },
+    {
+      "index": 11,
+      "title": "Harbor Fireworks",
+      "filename": "11-harbor-fireworks.png"
+    },
+    {
+      "index": 6,
+      "title": "Coral Kingdom",
+      "filename": "06-coral-kingdom.png"
+    }
+  ],
+  "template_for_inspection": "C:/dev/eufy-e1-templates/cad/stl/std-mag-57x57.stl",
+  "template_mm": [
+    308,
+    308,
+    8
+  ],
+  "positions": 16,
+  "print_array_status": "Created and verified; opened for user review",
+  "grid": [
+    4,
+    4
+  ],
+  "pocket_edge_gap_mm": 21.833333333333332,
+  "pocket_pitch_mm": 79.33333333333333,
+  "outer_rim_mm": 6.25,
+  "print_image": "C:/dev/eufy-e1-templates/artwork/original-cruise-2026-50/print-4x4-308mm-quarter-inch-bleed/PRINT-308x308mm-4x4-6p35mm-bleed-508dpi.png"
+}

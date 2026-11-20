@@ -1,0 +1,8 @@
+PRINT FILE: PRINT-308x308mm-4x4-6p35mm-bleed-508dpi.png
+Import as 308.000 x 308.000 mm. Keep aspect ratio. Disable fit-to-page, trimming of transparent margins, and mirroring.
+The PNG is 6160 x 6160 pixels at 508 DPI. Transparent areas must not receive ink.
+Each nominal 57mm face is centered in its 57.5mm pocket. Bleed is 6.35mm (1/4 inch) on EACH side; total artwork is 69.7mm square.
+The full original artwork is preserved within each 57mm face; generated background extends outside it for bleed.
+Image top corresponds to CAD +Y; use the same jig orientation. Artwork order reads left-to-right, top-to-bottom.
+The two files marked PROOF are for checking only. They are not print artwork.
+Selected order: 68,46,35,25,14,11,06, repeated. Designs 68 and 46 have three copies; all others have two.
