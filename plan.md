@@ -63,7 +63,7 @@ Track every job by index and job ID in jobs.json. Poll both success and failure.
 - Verified source: cad/generate.py build_jig and cad/std-mag-57x57.scad; plate 308x308x8, pockets 57.5x57.5x6, rim 6.25 mm. New 4x4 spacing is (308-2*6.25-4*57.5)/3 = 21.833333 mm.
 - [x] square-grid-change — Generator and its standard square outputs use 16 pockets. Other seven generated jigs must match baseline.
 - [x] square-grid-proof — python -m unittest discover -s cad -p test_generate.py passes; exported STL bounds 308x308x8 and 16 pocket floors.
-- [~] square-grid-delivery — Verified and reopened in Bambu Studio; focused commit/push on main in progress. Repository has no tracked .github workflow configuration.
+- [x] square-grid-delivery — Verified STL reopened in Bambu Studio; implementation committed and pushed to main. No repository workflow is configured.
 - Render restart policy: launch hidden OpenSCAD export; track process and both exit outcomes. At 5 minutes diagnose; fix deterministic issue before one retry. No unbounded retries.
 - Preconditions: OpenSCAD present; main branch; gh has no login. Git may have separate credentials; attempt normal noninteractive push after verification. Existing untracked artwork/CAD preserved.
 
@@ -71,3 +71,5 @@ Track every job by index and job ID in jobs.json. Poll both success and failure.
 - OpenSCAD export process 36268 — exit 0, 19.116 seconds, simple solid. Preview process 56608 — exit 0; top view visually confirmed four rows and four columns.
 - Python313/python.exe C:/Users/Jeremy/.codex/tmp/square-jig-4x4/verify_stl.py — exit 0; 9,684 triangles, bounds [0,0,0] to [308,308,8], 16 separate 57.5mm pocket floors, closed mesh (each edge shared twice).
 - git diff --check — exit 0. Standard square PNG, SVG, SCAD and STL regenerated; index metadata updated. Bambu Studio reopened with updated STL, process 37740.
+
+- Delivery: commit 5826e6e5951580054fb5fd570719fde6f85d2353 pushed to origin/main; git ls-remote confirmed identical remote SHA. GitHub connector returned no commit statuses and no PR-triggered workflow runs; local tracked files contain no .github workflow, so no repository deployment run exists to monitor.
