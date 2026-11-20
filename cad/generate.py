@@ -120,6 +120,12 @@ def build_jig(
     w, h, z = size
     min_outer = STD_MIN_OUTER if bed == "standard" else WALL
     cols, rows, pw, ph, ox, oy = pack(plate, w, h, min_outer=min_outer)
+    gap_x = gap_y = WALL
+    if key == "std-mag-57x57":
+        # Keep the existing outer rim; put the freed space between 16 pockets.
+        cols = rows = 4
+        gap_x = (plate[0] - 2 * ox - cols * pw) / (cols - 1)
+        gap_y = (plate[1] - 2 * oy - rows * ph) / (rows - 1)
     if item.startswith("mag"):
         wall_z = max(2.4, z - MAGNET_PROUD)  # 7.5 mm blank sits ~1.5 mm proud
         depth = wall_z
@@ -130,8 +136,8 @@ def build_jig(
     pockets = []
     for r in range(rows):
         for c in range(cols):
-            x = ox + c * (pw + WALL)
-            y = oy + r * (ph + WALL)
+            x = ox + c * (pw + gap_x)
+            y = oy + r * (ph + gap_y)
             pockets.append(Pocket(x, y, pw, ph, depth))
     cols_n, rows_n = cols, rows
     notes = list(notes) + [
