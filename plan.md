@@ -86,3 +86,9 @@ Track every job by index and job ID in jobs.json. Poll both success and failure.
 
 - Final print proof: Python313/python.exe C:/Users/Jeremy/.codex/tmp/square-jig-4x4/build_print_sheet.py — exit 0. PNG 6160x6160 at 508dpi (308mm square), 16 opaque 1394px squares, 6.35mm bleed each side, transparent gaps, no overlap. Largest center offset from actual STL is 0.01701mm due to raster rounding.
 - All 16 nominal 1140px magnet faces byte-match their resized original selected artworks. Reviewed magnet-face proof and alignment proof; all 2026 text complete. Background extensions stored separately; originals unchanged. Final image opened via Explorer.
+
+## collection-source-delivery — Commit remaining task assets
+- 2026-11-21 user request: "commit and push". Scope: remaining original cruise collection, bleed source assets, verification metadata, and final review PDF. Pre-existing unrelated artwork/CAD and PDF preview scratch files remain outside this commit.
+- Verified all 70 source image SHA256 checksums against image-verification.json; all matched. No pending file exceeds 100MiB.
+- Mark PDF files binary in .gitattributes so Git preserves byte offsets and does not apply Windows newline conversion.
+- Proof: git diff --cached --check; compare staged PDF object hash to raw local file; push main and confirm remote SHA.

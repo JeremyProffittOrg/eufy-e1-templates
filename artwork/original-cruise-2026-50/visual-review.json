@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "designs": 70,
+  "pagesReviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "yearText": "2026",
+  "imageCount": 70,
+  "labelsPresent": true,
+  "blackAndWhiteDesigns": 20,
+  "notes": "Review PDF; no print bleed or jig imposition."
+}
