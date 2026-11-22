@@ -92,3 +92,15 @@ Track every job by index and job ID in jobs.json. Poll both success and failure.
 - Verified all 70 source image SHA256 checksums against image-verification.json; all matched. No pending file exceeds 100MiB.
 - Mark PDF files binary in .gitattributes so Git preserves byte offsets and does not apply Windows newline conversion.
 - Proof: git diff --cached --check; compare staged PDF object hash to raw local file; push main and confirm remote SHA.
+
+## logo-print-sheet — Eight mosaic and eight fireworks magnets with ship logo
+- 2026-11-21 locked decisions: user requested Disney Treasure logo and answered "Use eight of each design". Selected designs 46 and 11; preserve 2026.
+- Outcome: new 308mm 4x4 transparent print PNG with 6.35mm bleed per side, eight of each logo-enhanced design. Non-goals: original overwrite, jig changes, printing.
+- Files: artwork/original-cruise-2026-50/print-mosaic-fireworks-disney-treasure-308mm/, plan.md.
+- [x] logo-artwork — Edit two source images using authentic logo reference; inspect results.
+- [x] logo-print-layout — Reuse verified coordinates and full-face protection; verify 8+8 count, transparent gaps, 308mm size and complete text.
+- Stop: if service rejects edits, retain rejection and do not retry to bypass content checks.
+
+- Logo edits completed in Higgsfield for designs 46 and 11; prompts and job receipts retained in new output folder. Both inspected: Disney Treasure logo and 2026 complete and readable.
+- Command: Python313/python.exe C:/Users/Jeremy/.codex/tmp/square-jig-4x4/build_logo_print_sheet.py — exit 0. Eight copies of each; 6160x6160 RGBA at 508dpi; 308mm square; 6.35mm bleed; transparent gaps; no overlaps; maximum STL alignment error 0.01701mm. All 16 face regions byte-match resized logo editions.
+- Visually checked alignment proof; all logos and year inside the 57mm faces. Opened final print PNG. Prior print sheets and original artwork unchanged.

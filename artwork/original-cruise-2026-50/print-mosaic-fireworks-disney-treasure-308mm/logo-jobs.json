@@ -1,0 +1,18 @@
+[
+  {
+    "index": 46,
+    "job_id": "26ae6768-091b-423d-ae43-baa4b65d2719",
+    "status": "completed",
+    "type": "image",
+    "model": "gpt_image_2_6",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KrWsIkH1GR8KUZs2aHATcOfjDM/hf_20261122_010620_26ae6768-091b-423d-ae43-baa4b65d2719.png"
+  },
+  {
+    "index": 11,
+    "job_id": "a1c7c41e-2900-4ce6-838b-8763636be64b",
+    "status": "completed",
+    "type": "image",
+    "model": "gpt_image_2_6",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KrWsIkH1GR8KUZs2aHATcOfjDM/hf_20261122_010621_a1c7c41e-2900-4ce6-838b-8763636be64b.png"
+  }
+]
