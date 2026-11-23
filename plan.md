@@ -104,3 +104,13 @@ Track every job by index and job ID in jobs.json. Poll both success and failure.
 - Logo edits completed in Higgsfield for designs 46 and 11; prompts and job receipts retained in new output folder. Both inspected: Disney Treasure logo and 2026 complete and readable.
 - Command: Python313/python.exe C:/Users/Jeremy/.codex/tmp/square-jig-4x4/build_logo_print_sheet.py — exit 0. Eight copies of each; 6160x6160 RGBA at 508dpi; 308mm square; 6.35mm bleed; transparent gaps; no overlaps; maximum STL alignment error 0.01701mm. All 16 face regions byte-match resized logo editions.
 - Visually checked alignment proof; all logos and year inside the 57mm faces. Opened final print PNG. Prior print sheets and original artwork unchanged.
+
+## mosaic-twelve-print — Three rows of four copies of the first design
+- 2026-11-22 locked decision: "okay, create a new template, 3 rows of 4, of the very first image, and open the folder it's in"
+- Outcome: 12 Ocean Mosaic logo copies in the top three rows of the existing 308mm jig sheet. Preserve dimensions, spacing and 6.35mm bleed. Fourth row transparent.
+- Non-goals: CAD changes, new artwork, printing, prior output changes. Files: new print-mosaic-3rows-4columns-308mm folder and plan.md.
+- Verified facts: previous print-layout.json identifies position 1 as design 46, Ocean Mosaic. Canvas 6160px square at 508dpi.
+- [x] mosaic-twelve-output — Reuse exact first tile; verify 12 byte-identical tiles, transparent remaining area and physical dimensions.
+- Stop conditions: unavailable source file or output access. No background jobs or retries required.
+
+- Execution: hidden powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File C:/Users/Jeremy/.codex/tmp/verify_mosaic_twelve.ps1 — exit 0. PASS: 12 byte-identical tiles, three rows of four, transparent fourth row, 308mm at 508dpi. Existing Pillow location inaccessible; used installed System.Drawing with exact pixel comparison.

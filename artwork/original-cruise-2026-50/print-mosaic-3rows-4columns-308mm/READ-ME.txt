@@ -1,0 +1,4 @@
+PRINT FILE: PRINT-Disney-Treasure-Mosaic-3rows-4columns-308mm-508dpi.png
+12 Ocean Mosaic designs. Three rows of four; fourth jig row blank.
+Import at 308 x 308 mm, 508 DPI. Preserve transparent margins. Disable fit-to-page and mirroring.
+57mm faces, 6.35mm bleed on each side. Existing jig spacing preserved.
